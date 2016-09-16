@@ -750,21 +750,6 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/hello_app/app/controllers/static_pages_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
       "/home/ubuntu/workspace/hello_app/app/controllers/users_controller.rb": [
         1,
         null,
@@ -898,9 +883,24 @@
         null,
         null,
         null
+      ],
+      "/home/ubuntu/workspace/hello_app/app/controllers/static_pages_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1474042078
+    "timestamp": 1474044688
   },
   "Unit Tests": {
     "coverage": {
