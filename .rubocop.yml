@@ -1,0 +1,74 @@
+inherit_from: .rubocop_todo.yml
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - db/schema.rb
+
+#################### Style ####################
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/TrailingWhitespace:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+#################### Metrics ####################
+
+Metrics/AbcSize:
+  Max: 26
+
+Metrics/LineLength:
+  Max: 112
+
+Metrics/MethodLength:
+  Max: 16
+
+##################### Performance ############################
+
+# Use `casecmp` rather than `downcase ==`.
+Performance/Casecmp:
+  Enabled: true
+
+# Use `str.{start,end}_with?(x, ..., y, ...)` instead of
+# `str.{start,end}_with?(x, ...) || str.{start,end}_with?(y, ...)`.
+Performance/DoubleStartEndWith:
+  Enabled: true
+
+# Use `strip` instead of `lstrip.rstrip`.
+Performance/LstripRstrip:
+  Enabled: true
+
+# Use `Range#cover?` instead of `Range#include?`.
+Performance/RangeInclude:
+  Enabled: true
+
+# Use `sort` instead of `sort_by { |x| x }`.
+Performance/RedundantSortBy:
+  Enabled: true
+
+# Use `start_with?` instead of a regex match anchored to the beginning of a
+# string.
+Performance/StartWith:
+  Enabled: true
+
+# Use `tr` instead of `gsub` when you are replacing the same number of
+# characters. Use `delete` instead of `gsub` when you are deleting
+# characters.
+Performance/StringReplacement:
+  Enabled: true
+
+# Checks for `.times.map` calls.
+Performance/TimesMap:
+  Enabled: true
